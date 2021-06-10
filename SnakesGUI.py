@@ -16,7 +16,7 @@ Food = pygame.image.load("Contents\\Apple.png").convert_alpha()
 # Global Variable
 Game_Exit = False
 # Black = (0, 0, 0)
-# Red = (255, 0, 0)
+
 
 class ScreenTemplate:
 
@@ -56,10 +56,10 @@ def Home_Screen(): # Completed! Pic editing required
     # Home Screen Decoration
     while not Game_Exit:
         Screen.blit(Plane, (0,0))
-        MPos = pygame.mouse.get_pos()
-        MX = MPos[0]
-        MY = MPos[1]
-        pygame.draw.rect(Screen, Red, (SW/8, SH/2.4, 675,65), 2)
+        # MPos = pygame.mouse.get_pos()
+        # MX = MPos[0]
+        # MY = MPos[1]
+        # pygame.draw.rect(Screen, Red, (SW/8, SH/2.4, 675,65), 2)
         Screen.blit(Snake1, (Snake_UX,Snake_UY))
         Screen.blit(Snake2, (Snake_LX, Snake_LY))
         Snake_UX += 10
